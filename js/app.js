@@ -75,6 +75,7 @@ document.getElementById('delivery-20').addEventListener('click', function(){
 
 // Discount Button===============================
 document.getElementById('apply-btn').addEventListener('click', function(){
+    const applyBtn = document.getElementById('apply-btn');
     // get promo input field
     const promoField = document.getElementById('promo-field');
     const promoFieldValue = promoField.value;
@@ -85,6 +86,8 @@ document.getElementById('apply-btn').addEventListener('click', function(){
     const discount = totalAmount / 20;
     if(promoFieldValue == 'stevejob'){
         totalAmount = totalAmount - discount;
+        applyBtn.setAttribute('disabled', '');
+
     }
     else{
         console.log(alert('Wrong code!'));
