@@ -39,21 +39,21 @@
                         <!-- Memory -->
                         <div class="mb-10">
                             <h2 class="text-3xl font-medium pb-4">Memory</h2>
-                            <button id="memory-8gb" class="border-2 rounded hover:bg-sky-10 text-xl px-4 py-2">8GB unified memory</button>
-                            <button id="memory-16gb" class="border-2 rounded hover:bg-sky-10 text-xl px-4 py-2">16GB unified memory</button>
+                            <button id="memory-8gb" class="border-2 rounded hover:bg-sky-100 text-xl px-4 py-2">8GB unified memory</button>
+                            <button id="memory-16gb" class="border-2 rounded hover:bg-sky-100 text-xl px-4 py-2">16GB unified memory</button>
                         </div>
                         <!-- Storage -->
                         <div class="mb-10">
                             <h2 class="text-3xl font-medium pb-4">Storage</h2>
-                            <button id="storage-256gb" class="border-2 rounded hover:bg-sky-10 text-xl px-3 py-2">256GB SSD storage</button>
-                            <button id="storage-512gb" class="border-2 rounded hover:bg-sky-10 text-xl px-3 py-2">512GB SSD storage</button>
-                            <button id="storage-1tb" class="border-2 rounded hover:bg-sky-10 text-xl px-3 py-2">1TB SSD storage</button>
+                            <button id="storage-256gb" class="border-2 rounded hover:bg-sky-100 text-xl px-3 py-2">256GB SSD storage</button>
+                            <button id="storage-512gb" class="border-2 rounded hover:bg-sky-100 text-xl px-3 py-2">512GB SSD storage</button>
+                            <button id="storage-1tb" class="border-2 rounded hover:bg-sky-100 text-xl px-3 py-2">1TB SSD storage</button>
                         </div>
                         <!-- Delivery time -->
                         <div class="mb-10">
                             <h2 class="text-3xl font-medium pb-4">Choose your delivery option</h2>
-                            <button id="delivery-free" class="border-2 rounded hover:bg-sky-10 text-xl px-4 py-2 mb-1 w-5/6">Friday, Aug 25 FREE prime Delivery</button>
-                            <button id="delivery-20" class="border-2 rounded hover:bg-sky-10 text-xl px-4 py-2 w-5/6">Friday, Aug 21 Delivery charge $20</button>
+                            <button id="delivery-free" class="border-2 rounded hover:bg-sky-100 text-xl px-4 py-2 mb-1 w-5/6">Friday, Aug 25 FREE prime Delivery</button>
+                            <button id="delivery-20" class="border-2 rounded hover:bg-sky-100 text-xl px-4 py-2 w-5/6">Friday, Aug 21 Delivery charge $20</button>
                         </div>
                     </div>
 
@@ -87,8 +87,8 @@
                             </div>
                             <div class="mt-3">
                                 <h2 class="mb-2">Add promo code</h2>
-                                <input class="w-4/6 border-2 pl-2 py-1" type="text" placeholder="promo code">
-                                <button class="px-3 py-2 text-white bg-blue-70 hover:bg-red-20 rounded">Apply</button>
+                                <input id="promo-field" class="w-4/6 border-2 pl-2 py-1" type="text" placeholder="promo code">
+                                <button id="apply-btn" class="px-3 py-2 text-white bg-blue-700 hover:bg-red-200 rounded">Apply</button>
                             </div>
                             
                         </div>
@@ -99,7 +99,7 @@
 
             </div>
             <hr>
-            <h1 class="text-center py-3 text-3xl font-semibold">Total: $1299</h1>
+            <h1 class="text-center py-3 text-3xl font-semibold">Total: $<span id="total">1299</span></h1>
         </section>
 
     </main>

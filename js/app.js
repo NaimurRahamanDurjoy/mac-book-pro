@@ -27,6 +27,10 @@ function priceTotal(){
     // get Total cost
     const costTotal = document.getElementById('cost-total');
     costTotal.innerText = totalPrice;
+
+    // get Total
+    const total = document.getElementById('total');
+    total.innerText = totalPrice;
     
 
 }
@@ -67,4 +71,23 @@ document.getElementById('delivery-free').addEventListener('click', function(){
 // delivery cost $20
 document.getElementById('delivery-20').addEventListener('click', function(){
     updateProductCost('delivery-charge', 20);
+})
+
+// Discount Button===============================
+document.getElementById('apply-btn').addEventListener('click', function(){
+    const promoField = document.getElementById('promo-field');
+    const promoFieldValue = promoField.value;
+    const total = document.getElementById('total');
+    let totalAmount = parseFloat(total.innerText);
+    const discount = totalAmount / 20;
+    if(promoFieldValue == 'stevejob'){
+        totalAmount = totalAmount - discount;
+    }
+    else{
+        console.log(alert('Wrond code!'));
+    }
+    total.innerText = totalAmount;
+
+    // clear the promoField
+    promoField.value = '';
 })
