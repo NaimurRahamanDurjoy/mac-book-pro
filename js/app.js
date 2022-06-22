@@ -75,16 +75,19 @@ document.getElementById('delivery-20').addEventListener('click', function(){
 
 // Discount Button===============================
 document.getElementById('apply-btn').addEventListener('click', function(){
+    // get promo input field
     const promoField = document.getElementById('promo-field');
     const promoFieldValue = promoField.value;
+    // get Total field
     const total = document.getElementById('total');
     let totalAmount = parseFloat(total.innerText);
+    // get discount amount
     const discount = totalAmount / 20;
     if(promoFieldValue == 'stevejob'){
         totalAmount = totalAmount - discount;
     }
     else{
-        console.log(alert('Wrond code!'));
+        console.log(alert('Wrong code!'));
     }
     total.innerText = totalAmount;
 
