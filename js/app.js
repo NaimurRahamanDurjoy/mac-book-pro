@@ -2,6 +2,33 @@ function updateProductCost(product,price){
     const getFreeProduct = document.getElementById(product);
     const freeProduct = parseInt(getFreeProduct.innerText = price);
     getFreeProduct.innerText = freeProduct;
+
+    // get total price
+    priceTotal();
+}
+
+// Total price
+function priceTotal(){
+    const bestPrice = document.getElementById('best-price');
+    const bestPriceNumber = parseInt(bestPrice.innerText);
+
+    const extraMemory = document.getElementById('memory-extra');
+    const extraMemoryNumber = parseInt(extraMemory.innerText);
+
+    const extraStorage = document.getElementById('storage-extra');
+    const extraStorageNumber = parseInt(extraStorage.innerText);
+
+    const costDelivery = document.getElementById('delivery-charge');
+    const costDeliveryNumber = parseInt(costDelivery.innerText);
+
+    // Calculate cost
+    const totalPrice = bestPriceNumber + extraMemoryNumber + extraStorageNumber + costDeliveryNumber;
+
+    // get Total cost
+    const costTotal = document.getElementById('cost-total');
+    costTotal.innerText = totalPrice;
+    
+
 }
 
 // Memory====================================
